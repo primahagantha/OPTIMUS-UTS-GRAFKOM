@@ -21,7 +21,7 @@ void drawSky() {
 
 void drawBuilding(float xOffset) {
     glBegin(GL_QUADS);
-    glColor3ub(82, 53, 53);
+    glColor3ub(11, 25, 44);
     glVertex2f(xOffset - 0.15f, 0.0f);
     glVertex2f(xOffset + 0.15f, 0.0f);
     glVertex2f(xOffset + 0.15f, 0.8f);
