@@ -5,7 +5,7 @@ float X = 0.0f;
 float Y = -0.3f;
 bool isJumping = false;
 float jumpSpeed = 0.005f;
-float gravity = -0.000025f;
+float gravity = -0.0002f;
 float verticalSpeed = 0.0f;
 
 void drawSky() {
@@ -124,6 +124,28 @@ void drawCharacter() {
     glVertex2f(0.035f, 0.35f);
     glVertex2f(0.0f, 0.325f);
     glVertex2f(-0.035f, 0.35f);
+    glEnd();
+
+    // Rambut
+    glColor3f(0.0, 0.0, 0.0);
+    glBegin(GL_POLYGON);
+    glVertex2f(-0.05f, 0.4f);
+    glVertex2f(-0.035f, 0.45f);
+    glVertex2f(0.0f, 0.475f);
+    glVertex2f(0.035f, 0.45f);
+    glEnd();
+
+    // Kuping
+    glColor3f(1.0, 0.8, 0.6);
+    glBegin(GL_POLYGON);
+    glVertex2f(0.05f, 0.42f);
+    glVertex2f(0.06f, 0.4f);
+    glVertex2f(0.05f, 0.38f);
+    glEnd();
+    glBegin(GL_POLYGON);
+    glVertex2f(-0.05f, 0.42f);
+    glVertex2f(-0.06f, 0.4f);
+    glVertex2f(-0.05f, 0.38f);
     glEnd();
 
     // Mata
